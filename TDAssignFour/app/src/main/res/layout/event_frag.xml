@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ui_event_location"
+        android:id="@+id/eventLocationTextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ui_event_title"
+        android:id="@+id/eventTitleTextView"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ui_event_date_time"
+        android:id="@+id/eventDateTimeTextView" />
+
+    <ImageView
+        android:id="@+id/imageViewOfEvent"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/ui_event_picture"
+        android:orientation="horizontal"
+        android:src="@drawable/ic_event" />
+
+</LinearLayout>

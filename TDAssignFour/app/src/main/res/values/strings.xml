@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, StartActivity!</string>
+    <string name="app_name">TD_ASSIGN4</string>
+    <string name="image_view_activity_name">ImageViewActivity</string>
+    <string name="photo_gallery_activity_name">Photo Gallery</string>
+    <string name="ui_event_location">Welcome to DCUs Secondary School</string>
+    <string name="ui_event_title">Upcoming Christmas Party</string>
+    <string name="ui_event_date_time">Dec 18th Dec 10:00pm-06:30am</string>
+    <string name="ui_event_picture">Event picture</string>
+    <string name="ui_cs_picture">Sudi picture</string>
+
+    <!-- Tab Strings -->
+    <string name="ui_tabname_event">event</string>
+    <string name="ui_tabname_gallery">gallery</string>
+    <string name="ui_tabname_match">match</string>
+    <string name="ui_tabname_settings">settings</string>
+
+    <!-- Menu Strings -->
+    <string name="ui_menu_search">search</string>
+    <string name="ui_menu_send">send</string>
+    <string name="ui_menu_add">add</string>
+    <string name="ui_menu_quit">quit</string>
+    <string name="ui_menu_feedback">feedback</string>
+    <string name="ui_menu_about">about</string>
+    <string name="ui_menu_share">share</string>
+
+</resources>

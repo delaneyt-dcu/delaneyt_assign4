@@ -1,0 +1,6 @@
+160102 - first commit
+To-date, used CK's actionTabFragPager demo as templete
+Completed tabs and event frag
+Got gallery frag working with with imageView activity working
+Up-arrow in imageView activity returns to home screen and not gallery frag
+Will park this for time being and start match frag next
