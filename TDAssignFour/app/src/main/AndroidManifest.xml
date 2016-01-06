@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.delaneyt.tdassignfour"
+    package="edu.oscail.cs.tdassignfour"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <application
         android:allowBackup="true"
-
+        android:icon="@drawable/ic_cs"
         android:label="@string/app_name" >
-        <!-- android:icon="@drawable/ic_cs" -->
         <activity
-            android:name=".MainActivity"
+            android:name="edu.oscail.cs.tdassignfour.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,29 +17,22 @@
             </intent-filter>
         </activity>
 
-
         <activity
-            android:name=".ImageViewActivity"
+            android:name=".ArtActivity"
             android:label="@string/image_view_activity_name"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme2">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" >
-                </action>
-
+                <action android:name="android.intent.action.VIEW" />
                 <data
                     android:mimeType="image/*"
                     android:scheme="android.resource" >
                 </data>
-
-                <category android:name="android.intent.category.DEFAULT" >
-                </category>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="edu.oscail.cs.tdassignfour.MainActivity" />
         </activity>
-
     </application>
-
 </manifest>

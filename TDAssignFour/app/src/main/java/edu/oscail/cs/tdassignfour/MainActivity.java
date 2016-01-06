@@ -1,4 +1,4 @@
-package com.example.delaneyt.tdassignfour;
+package edu.oscail.cs.tdassignfour;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -11,8 +11,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import com.example.delaneyt.tdassignfour.view.*;
-
+import edu.oscail.cs.tdassignfour.view.*;
 
 public class MainActivity extends Activity {
     private SlidingTabLayout slidingTabLayout;

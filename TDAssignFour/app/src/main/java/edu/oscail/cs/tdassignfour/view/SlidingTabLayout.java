@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.delaneyt.tdassignfour.view;
+package edu.oscail.cs.tdassignfour.view;
 
 import android.content.Context;
 import android.graphics.Typeface;

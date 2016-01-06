@@ -3,16 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-<!--
-    <ImageView
+
+<!--    <ImageView
         android:id="@+id/imageViewOfGirl"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:contentDescription="@string/ui_event_picture"
+        android:contentDescription="@string/ui_love_picture"
         android:orientation="horizontal"
-        android:src="@drawable/ic_eye" />
-        -->
-
+        android:src="@drawable/ic_eye" /> -->
 
     <GridView
         android:id="@+id/gridview"
@@ -24,12 +22,5 @@
         android:numColumns="auto_fit"
         android:stretchMode="columnWidth"
         android:verticalSpacing="10dp" />
-
-
-
-
-
-
-
 
 </LinearLayout>

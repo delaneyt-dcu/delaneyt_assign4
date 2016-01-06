@@ -1,6 +1,24 @@
 160102 - first commit
 To-date, used CK's actionTabFragPager demo as templete
 Completed tabs and event frag
+Leaving the action bar to the end
 Got gallery frag working with with imageView activity working
 Up-arrow in imageView activity returns to home screen and not gallery frag
+Researched:	http://stackoverflow.com/questions/14354279/call-parents-activity-from-a-fragment
+		http://stackoverflow.com/questions/13086840/actionbar-up-navigation-with-fragments
 Will park this for time being and start match frag next
+
+160106 - second commit
+Up-date, completed match frag but app kept crashing
+I tested a few posible reasons:
+1. I had renamed the folders from edu/oscail to com/example, therefore:
+	Decided to start app again from sketch keeping original folder names from actionTabFragPager demo
+	Found app started to crash again only when I created the Team A and B fragments within a match fragment
+	Match fragment was orginally an activity.
+2. Following research: http://stackoverflow.com/questions/6672066/fragment-inside-fragment
+	I realise that  fragments cannot hold other fragments earlier the API Level 17. My min Level is 16.
+	I rewrote the Match fragment again incorporating the code of the team fragments within.
+	App works fine now apart form the very oscasional crash which I attribute to lack of memory on device.
+I noticed that the team names, score and match stats are all retained when I switch between screens
+Apart from when I tab on the match tab which is also the frag displayed upon launch
+I will work on this next along with the Up-arrow in imageView activity not returning to gallery frag

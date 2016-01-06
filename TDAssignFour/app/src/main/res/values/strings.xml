@@ -2,20 +2,36 @@
 <resources>
 
     <string name="hello">Hello World, StartActivity!</string>
-    <string name="app_name">TD_ASSIGN4</string>
+    <string name="app_name">ActionTabViewPager</string>
+    <string name="ui_cs_picture">Sudi picture</string>
+    <string name="ui_love_picture">Love picture</string>
     <string name="image_view_activity_name">ImageViewActivity</string>
     <string name="photo_gallery_activity_name">Photo Gallery</string>
     <string name="ui_event_location">Welcome to DCUs Secondary School</string>
     <string name="ui_event_title">Upcoming Christmas Party</string>
     <string name="ui_event_date_time">Dec 18th Dec 10:00pm-06:30am</string>
     <string name="ui_event_picture">Event picture</string>
-    <string name="ui_cs_picture">Sudi picture</string>
+
+    <string name="rugby_summary_button">SUMMARY</string>
+    <string name="rugby_reset_button">RESET</string>
+    <string name="rugby_email_button">EMAIL</string>
+
+    <string name="enter_team_a">Enter Team A</string>
+    <string name="enter_team_b">Enter Team B</string>
+    <string name="score_text_a">0</string>
+    <string name="score_text_b">0</string>
+    <string name="penalty_button_a">+3 PENALTY</string>
+    <string name="penalty_button_b">+3 PENALTY</string>
+    <string name="conversion_button_a">+2 CONVERSION</string>
+    <string name="conversion_button_b">+2 CONVERSION</string>
+    <string name="try_button_a">+5 TRY</string>
+    <string name="try_button_b">+5 TRY</string>
 
     <!-- Tab Strings -->
-    <string name="ui_tabname_event">event</string>
-    <string name="ui_tabname_gallery">gallery</string>
-    <string name="ui_tabname_match">match</string>
-    <string name="ui_tabname_settings">settings</string>
+    <string name="ui_tabname_find">find</string>
+    <string name="ui_tabname_chat">chat</string>
+    <string name="ui_tabname_meet">meet</string>
+    <string name="ui_tabname_party">party</string>
 
     <!-- Menu Strings -->
     <string name="ui_menu_search">search</string>

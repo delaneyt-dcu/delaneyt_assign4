@@ -1,4 +1,4 @@
-package com.example.delaneyt.tdassignfour;
+package edu.oscail.cs.tdassignfour;
 
 import android.content.Context;
 import android.view.View;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import java.util.List;
 
 /**
- * This is a child activity contains formatting parameters used by the ImageViewActivity called by
+ * This is a child activity contains formatting parameters used by the ArtActivity called by
  * explicit intent initiated by a clickable thumbprint image. This class does not launch a
  * screen/activity. The origins of the code used in this class is accredited to Dr Adam Porter
  * (ref project: UIGrdLayout.java)

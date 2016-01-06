@@ -34,5 +34,4 @@
         android:contentDescription="@string/ui_event_picture"
         android:orientation="horizontal"
         android:src="@drawable/ic_event" />
-
 </LinearLayout>

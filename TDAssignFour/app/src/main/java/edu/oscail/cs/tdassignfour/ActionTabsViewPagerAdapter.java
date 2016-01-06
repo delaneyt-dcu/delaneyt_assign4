@@ -1,4 +1,4 @@
-package com.example.delaneyt.tdassignfour;
+package edu.oscail.cs.tdassignfour;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
