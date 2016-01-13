@@ -16,9 +16,10 @@
     <string name="rugby_reset_button">RESET</string>
     <string name="rugby_email_button">EMAIL</string>
 
+    <!-- Match Fragment Strings -->
     <string name="enter_team_a">Enter Team A</string>
     <string name="enter_team_b">Enter Team B</string>
-    <string name="score_text_a">0</string>
+    <string name="score_text_a">null</string>
     <string name="score_text_b">0</string>
     <string name="penalty_button_a">+3 PENALTY</string>
     <string name="penalty_button_b">+3 PENALTY</string>
@@ -26,6 +27,19 @@
     <string name="conversion_button_b">+2 CONVERSION</string>
     <string name="try_button_a">+5 TRY</string>
     <string name="try_button_b">+5 TRY</string>
+
+    <!-- Preference Strings -->
+    <string name="application_preferences">Application Preferences</string>
+    <string name="title_username_preference">User Name</string>
+    <string name="summary_username_preference">enter user name here</string>
+    <string name="dialog_title_username_preference">Enter your user name</string>
+    <string name="title_password_preference">Password</string>
+    <string name="summary_password_preference">cvfdfdfdfdff</string>
+    <string name="dialog_title_password_preference">Enter your password</string>
+    <string name="title_email_preference">Email</string>
+    <string name="summary_email_preference">enter email here</string>
+    <string name="dialog_title_email_preference">Enter your email</string>
+    <string name="title_student_member_preference">Student Member</string>
 
     <!-- Tab Strings -->
     <string name="ui_tabname_find">find</string>

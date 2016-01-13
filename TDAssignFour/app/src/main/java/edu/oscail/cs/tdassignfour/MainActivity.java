@@ -3,6 +3,7 @@ package edu.oscail.cs.tdassignfour;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -13,18 +14,29 @@ import java.util.ArrayList;
 
 import edu.oscail.cs.tdassignfour.view.*;
 
-public class MainActivity extends Activity {
+import static android.app.PendingIntent.getActivity;
+
+public class MainActivity extends FragmentActivity {
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
     private ArrayList<Fragment> fragments;
     private ActionTabsViewPagerAdapter myViewPageAdapter;
+	private android.support.v4.app.Fragment counterA;
+	private android.support.v4.app.Fragment counterB;
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		if (savedInstanceState != null) {
+			//Restore the fragment's instance
+			counterA = getSupportFragmentManager().getFragment(
+					savedInstanceState, "Team_A");
+			counterB = getSupportFragmentManager().getFragment(
+					savedInstanceState, "Team_B");
+		}
 		setContentView(R.layout.main);
-
+		//setRetainInstance(true);
         // Define SlidingTabLayout (shown at top)
         // and ViewPager (shown at bottom) in the layout.
         // Get their instances.
@@ -47,8 +59,6 @@ public class MainActivity extends Activity {
         // make sure the tabs are equally spaced.
         slidingTabLayout.setDistributeEvenly(true);
         slidingTabLayout.setViewPager(viewPager);
-
-
 	}
 
 	@Override
@@ -93,7 +103,12 @@ public class MainActivity extends Activity {
 		}
 		return false;
 	}
+//	@Override
+//	protected void onSaveInstanceState(Bundle outState) {
+//		super.onSaveInstanceState(outState);
 
-
-
+//Save the fragment's instance
+//		getSupportFragmentManager().putFragment(outState, "TeamA", counterA);
+//		getSupportFragmentManager().putFragment(outState, "TeamA", counterB);
+//	}
 }
