@@ -45,3 +45,21 @@ Things to-do:
 4. test
 5. add comments and java code
 6. update README (check spelling with Words) and commit to github repository
+
+**************************************************************
+
+160118 - forth commit
+App fully working apart from checking screen orienation layouts.
+Of the Things to-do checklist:
+1. All menu items action tabs working
+2. back arrow was resolved by overriding onOptionsItemSelected(MenuItem item) and
+setting it to android.R.id.home
+3. Solved the memberVaribles problem. turns out that all I need to add was 'android:freezesText="true" />'
+to my xml file which forces the textview to save its state
+ref: http://stackoverflow.com/questions/5179686/restoring-state-of-textview-after-screen-rotation
+
+Still need to do:
+4. more testing. In screen changed to landscape orienation, keyboard always pops up even when not called
+5. add more comments and more java code
+6. update README (check spelling with Words) and commit to github repository
+

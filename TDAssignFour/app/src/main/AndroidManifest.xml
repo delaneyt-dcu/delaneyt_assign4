@@ -6,12 +6,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_cs"
-        android:label="@string/app_name" >
+        android:label="@string/app_name">
         <activity
             android:name="edu.oscail.cs.tdassignfour.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme2" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,7 +33,14 @@
             </intent-filter>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.oscail.cs.tdassignfour.MainActivity" />
+                android:value="edu.oscail.cs.tdassignfour.GalleryFragment" />
+
         </activity>
     </application>
 </manifest>
+
+<!-- <meta-data
+android:name="android.support.PARENT_ACTIVITY"
+android:value="edu.oscail.cs.tdassignfour.MainActivity" /> -->
+
+

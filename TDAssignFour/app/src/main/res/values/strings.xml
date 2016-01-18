@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, StartActivity!</string>
-    <string name="app_name">ActionTabViewPager</string>
-    <string name="ui_cs_picture">Sudi picture</string>
-    <string name="ui_love_picture">Love picture</string>
-    <string name="image_view_activity_name">ImageViewActivity</string>
-    <string name="photo_gallery_activity_name">Photo Gallery</string>
+    <!-- Name Strings -->
+    <string name="app_name">TD_ASSIGN4</string>
+    <string name="image_view_activity_name">ArtActivity</string>
+
+    <!-- Notification Strings -->
+    <string name="notification_title">School Notification</string>
+    <string name="notification_text">Notification: Save a date in your diary</string>
+    <string name="events_title">School Event</string>
+    <string name="event_location">Student Union, DCU</string>
+
+
+    <!-- Tab Strings
+    <string name="ui_tabname_find">find</string>
+    <string name="ui_tabname_chat">chat</string>
+    <string name="ui_tabname_meet">meet</string>
+    <string name="ui_tabname_party">party</string>
+    <string name="ui_tabname_event">EVENT</string>
+    <string name="ui_tabname_gallery">GALLERY</string>
+    <string name="ui_tabname_match">MATCH</string>
+    <string name="ui_tabname_settings">SETTINGS</string> -->
+
+    <!-- Event Strings -->
     <string name="ui_event_location">Welcome to DCUs Secondary School</string>
     <string name="ui_event_title">Upcoming Christmas Party</string>
     <string name="ui_event_date_time">Dec 18th Dec 10:00pm-06:30am</string>
     <string name="ui_event_picture">Event picture</string>
 
-    <string name="rugby_summary_button">SUMMARY</string>
-    <string name="rugby_reset_button">RESET</string>
-    <string name="rugby_email_button">EMAIL</string>
-
     <!-- Match Fragment Strings -->
     <string name="enter_team_a">Enter Team A</string>
     <string name="enter_team_b">Enter Team B</string>
-    <string name="score_text_a">null</string>
+    <string name="score_text_a">0</string>
     <string name="score_text_b">0</string>
     <string name="penalty_button_a">+3 PENALTY</string>
     <string name="penalty_button_b">+3 PENALTY</string>
@@ -27,6 +39,9 @@
     <string name="conversion_button_b">+2 CONVERSION</string>
     <string name="try_button_a">+5 TRY</string>
     <string name="try_button_b">+5 TRY</string>
+    <string name="rugby_summary_button">SUMMARY</string>
+    <string name="rugby_reset_button">RESET</string>
+    <string name="rugby_email_button">EMAIL</string>
 
     <!-- Preference Strings -->
     <string name="application_preferences">Application Preferences</string>
@@ -41,19 +56,8 @@
     <string name="dialog_title_email_preference">Enter your email</string>
     <string name="title_student_member_preference">Student Member</string>
 
-    <!-- Tab Strings -->
-    <string name="ui_tabname_find">find</string>
-    <string name="ui_tabname_chat">chat</string>
-    <string name="ui_tabname_meet">meet</string>
-    <string name="ui_tabname_party">party</string>
-
     <!-- Menu Strings -->
-    <string name="ui_menu_search">search</string>
-    <string name="ui_menu_send">send</string>
-    <string name="ui_menu_add">add</string>
-    <string name="ui_menu_quit">quit</string>
-    <string name="ui_menu_feedback">feedback</string>
-    <string name="ui_menu_about">about</string>
+    <string name="ui_menu_notify">notify</string>
+    <string name="ui_menu_event">event</string>
     <string name="ui_menu_share">share</string>
-
 </resources>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ImageView;
 
 
@@ -13,7 +14,6 @@ import android.widget.ImageView;
  * Created by delaneyt on 31/12/2015.
  */
 public class ArtActivity extends AppCompatActivity
-        //implements FragmentManager.OnBackStackChangedListener
         {
 
     /**
@@ -53,7 +53,25 @@ public class ArtActivity extends AppCompatActivity
 
         // Tag marker for this activity
         Log.i(TAG, "The activity is visible and has been created.");
+
     }
+
+
+            // Ensures the single up arrow action returns to previous screen
+            // (similar to back arrow in this case)
+            @Override
+            public boolean onOptionsItemSelected(MenuItem item) {
+                switch (item.getItemId()) {
+                    // Respond to the action bar's Up/Home button
+                    case android.R.id.home:
+                        finish();
+                        return true;
+                }
+                return super.onOptionsItemSelected(item);
+            }
+
+
+
 
  /**   @Override
     public void onBackStackChanged() {
