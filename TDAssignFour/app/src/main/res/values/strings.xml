@@ -5,22 +5,11 @@
     <string name="app_name">TD_ASSIGN4</string>
     <string name="image_view_activity_name">ArtActivity</string>
 
-    <!-- Notification Strings -->
+    <!-- Notification Strings (Note: change dates within MainActivity method-->
     <string name="notification_title">School Notification</string>
     <string name="notification_text">Notification: Save a date in your diary</string>
     <string name="events_title">School Event</string>
     <string name="event_location">Student Union, DCU</string>
-
-
-    <!-- Tab Strings
-    <string name="ui_tabname_find">find</string>
-    <string name="ui_tabname_chat">chat</string>
-    <string name="ui_tabname_meet">meet</string>
-    <string name="ui_tabname_party">party</string>
-    <string name="ui_tabname_event">EVENT</string>
-    <string name="ui_tabname_gallery">GALLERY</string>
-    <string name="ui_tabname_match">MATCH</string>
-    <string name="ui_tabname_settings">SETTINGS</string> -->
 
     <!-- Event Strings -->
     <string name="ui_event_location">Welcome to DCUs Secondary School</string>
@@ -37,6 +26,8 @@
     <string name="penalty_button_b">+3 PENALTY</string>
     <string name="conversion_button_a">+2 CONVERSION</string>
     <string name="conversion_button_b">+2 CONVERSION</string>
+    <string name="land_con_button_a">+2 CON</string>
+    <string name="land_con_button_b">+2 CON</string>
     <string name="try_button_a">+5 TRY</string>
     <string name="try_button_b">+5 TRY</string>
     <string name="rugby_summary_button">SUMMARY</string>

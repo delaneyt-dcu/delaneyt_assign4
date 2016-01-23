@@ -30,18 +30,20 @@ I will work on this next along with the Up-arrow in imageView activity not retur
 160113 - third commit
 Up-date, could not solve:
 1. Back arrow still reverts back to launch activity as opposed to gallery fragment
-2. memberVaribles hold their value but display their xml default value when:
+2. memberVariables hold their value but display their xml default value when:
 	a. device orientation changed;
 	b. when match fragment (same as launch fragment) is resumed.
+Tried the following sites but to no avail:
+http://stackoverflow.com/questions/5179686/restoring-state-of-textview-after-screen-rotation
+http://developer.android.com/guide/topics/resources/runtime-changes.html
+https://github.com/codepath/android_guides/wiki/Handling-Configuration-Changes
 
-***** ADD MY RESEARCH HERE LATER *****
-
-Decided to pack this and move-on.
+Decided to park this for later and move-on.
 Got the setting fragment working as required.
 Things to-do:
 1. work on the action bar tabs, ie share, settings for all fragments
 2. back arrow to gallery frag
-3. memberVaribles
+3. memberVariables
 4. test
 5. add comments and java code
 6. update README (check spelling with Words) and commit to github repository
@@ -49,17 +51,30 @@ Things to-do:
 **************************************************************
 
 160118 - forth commit
-App fully working apart from checking screen orienation layouts.
+App fully working apart from checking screen orientation layouts.
 Of the Things to-do checklist:
 1. All menu items action tabs working
 2. back arrow was resolved by overriding onOptionsItemSelected(MenuItem item) and
-setting it to android.R.id.home
-3. Solved the memberVaribles problem. turns out that all I need to add was 'android:freezesText="true" />'
-to my xml file which forces the textview to save its state
+setting it to android.R.id.home 
+3. Solved the memberVariable s problem. Turns out that all I need to add was 'android:freezesText="true" />'
+to my xml file which forces the textView to save its state
 ref: http://stackoverflow.com/questions/5179686/restoring-state-of-textview-after-screen-rotation
 
 Still need to do:
-4. more testing. In screen changed to landscape orienation, keyboard always pops up even when not called
+4. more testing. In screen changed to landscape orientation, keyboard always pops up even when not called
 5. add more comments and more java code
 6. update README (check spelling with Words) and commit to github repository
+
+**************************************************************
+
+160123 - fifth commit
+App complete
+App tested and landscape layout for match fragment added
+Colour coded bolder added to Team Container within match fragment layout
+Keyboard frozen from popping up after screen orientation changed
+Curser removed from edit text fields
+More comments added, code structure reformatted and Javadoc comments for each class and all methods
+README file updated and committed to github repository
+
+
 

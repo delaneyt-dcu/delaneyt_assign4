@@ -2,24 +2,32 @@ package edu.oscail.cs.tdassignfour;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-
 /**
+ *  Displays an enlarged view of a thumbprint
  *
- * Created by delaneyt on 31/12/2015.
+ *  <p> This class is launched by explicit intent when an image thumbprint is clicked within the
+ *  GalleryFragment class and includes an actionbar containing a clickable back action arrow which
+ *  will return the user to the GalleryFragment class.</p>
+ *
+ *  <p><b>References: </b>The origins of the code used in this class is accredited to Dr Adam Porter
+ * ref project: UIGrdLayout.java)</p>
+ *
+ *  @author Tim Delaney
+ *  @version 2.0
+ *  @since 2016-01-20
+ *  @see "UIGridLayout" demo by Adam Porter available at:
+ *  @see <a href="http://developer.android.com/guide/topics/ui/layout/gridview.html"</a>
  */
-public class ArtActivity extends AppCompatActivity
-        {
+public class ArtActivity extends AppCompatActivity {
 
     /**
-     * Public void method that overrides the onCreate method of the AppCompatActivity class and saves
-     * the state of the application in a bundle based on the value of the savedInstance State and
-     * carries out button intent actions.
+     * Saves the state of the application in a bundle based on the value of the savedInstance State
+     * and carries out button intent actions.
      *
      * @param savedInstanceState can be passed back to onCreate if the activity needs to be created
      *                           (e.g., orientation change) so that you don't lose this prior
@@ -27,13 +35,9 @@ public class ArtActivity extends AppCompatActivity
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        //Listen for changes in the back stack
-        //getSupportFragmentManager().addOnBackStackChangedListener(this);
-        //Handle when activity is recreated like on orientation Change
-        //shouldDisplayHomeUp();
-        /*
-        Debug Tag for use logging debug output to LogCat
-        */
+
+
+        //Debug Tag for use logging debug output to LogCat
         String TAG = "ArtActivity";
 
         // Calls the onCreate constructor of the AppCompatActivity superclass
@@ -56,68 +60,21 @@ public class ArtActivity extends AppCompatActivity
 
     }
 
-
-            // Ensures the single up arrow action returns to previous screen
-            // (similar to back arrow in this case)
-            @Override
-            public boolean onOptionsItemSelected(MenuItem item) {
-                switch (item.getItemId()) {
-                    // Respond to the action bar's Up/Home button
-                    case android.R.id.home:
-                        finish();
-                        return true;
-                }
-                return super.onOptionsItemSelected(item);
-            }
-
-
-
-
- /**   @Override
-    public void onBackStackChanged() {
-        shouldDisplayHomeUp();
-    }
-
-    public void shouldDisplayHomeUp() {
-        //Enable Up button only  if there are entries in the back stack
-        boolean canback = getSupportFragmentManager().getBackStackEntryCount() > 0;
-        getSupportActionBar().setDisplayHomeAsUpEnabled(canback);
-    }
-
+    /**
+     * Returns user to previous screen with up arrow set to act like a back arrow in this case
+     * ie could not set GalleryFragment as parent in Manifest file
+     *
+     * @param item represent the menu item clicked, the up arrow in this case
+     * @return boolean true if clicked to return user to previous screen
+     */
     @Override
-    public boolean onSupportNavigateUp() {
-        //This method is called when the up button is pressed. Just the pop back stack.
-        getSupportFragmentManager().popBackStack();
-        return true;
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }*/
-
 }

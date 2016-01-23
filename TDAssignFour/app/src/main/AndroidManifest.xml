@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.oscail.cs.tdassignfour"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="edu.oscail.cs.tdassignfour">
 
     <application
         android:allowBackup="true"
@@ -10,10 +8,10 @@
         <activity
             android:name="edu.oscail.cs.tdassignfour.MainActivity"
             android:label="@string/app_name"
+            android:windowSoftInputMode="stateUnchanged|adjustResize"
             android:theme="@style/AppTheme2" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -31,16 +29,9 @@
                 </data>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.oscail.cs.tdassignfour.GalleryFragment" />
-
         </activity>
     </application>
 </manifest>
 
-<!-- <meta-data
-android:name="android.support.PARENT_ACTIVITY"
-android:value="edu.oscail.cs.tdassignfour.MainActivity" /> -->
 
 

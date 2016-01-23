@@ -10,11 +10,19 @@ import android.widget.ImageView;
 import java.util.List;
 
 /**
- * This is a child activity contains formatting parameters used by the ArtActivity called by
- * explicit intent initiated by a clickable thumbprint image. This class does not launch a
- * screen/activity. The origins of the code used in this class is accredited to Dr Adam Porter
- * (ref project: UIGrdLayout.java)
- * Created by delaneyt on 11/12/2015.
+ * Contains formatting parameters used by the ArtActivity
+ *
+ * <p>This class is called by explicit intent initiated by a clickable thumbprint image.
+ * This class does not launch a screen/activity.</p>
+ *
+ * <p><b>References: </b>The origins of the code used in this class is accredited to Dr Adam Porter
+ * ref project: UIGrdLayout.java)</p>
+ *
+ *  @author Tim Delaney
+ *  @version 2.0
+ *  @since 2016-01-20
+ *  @see "UIGridLayout" demo by Adam Porter available at:
+ *  @see <a href="http://developer.android.com/guide/topics/ui/layout/gridview.html"</a>
  */
 public class ImageAdapter extends BaseAdapter {
 
@@ -25,32 +33,58 @@ public class ImageAdapter extends BaseAdapter {
     private Context mContext;
     private List<Integer> mThumbIds;
 
-    // Store the list of image IDs
+    /**
+     * Stores a list of image IDs
+     * Used by the {@link public View onCreateView} method in GalleryFragment class
+     *
+     * @param c refers to the context
+     * @param ids are passed to this method from the GalleryFragment class
+     */
     public ImageAdapter(Context c, List<Integer> ids) {
         mContext = c;
         this.mThumbIds = ids;
     }
 
-    // Return the number of items in the Adapter
+    /**
+     * Returns the number of items in the Adapter
+     *
+     * @return Int of the number of thumbprint
+     */
     @Override
     public int getCount() {
         return mThumbIds.size();
     }
 
-    // Return the data item at position
+    /**
+     * Returns the thumbprint position
+     *
+     * @param position as a int number for the thumbprint
+     * @return thumbprint's Id with its associated position
+     */
     @Override
     public Object getItem(int position) {
         return mThumbIds.get(position);
     }
 
-    // Will get called to provide the ID that
-    // is passed to OnItemClickListener.onItemClick()
+    /**
+     * Returns the ID of the image represented by the images int position
+     *
+     * @param position of the thumbprint represented by an int value
+     * @return thumbprint's Id with its associated position
+     */
     @Override
     public long getItemId(int position) {
         return mThumbIds.get(position);
     }
 
-    // Return an ImageView for each item referenced by the Adapter
+    /**
+     * Returns an ImageView for each item referenced by the Adapter
+     *
+     * @param position of the thumbprint in the form an integer
+     * @param convertView of the View
+     * @param parent of the ViewGroup
+     * @return an imageView of the image using the parameters set
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -63,7 +97,6 @@ public class ImageAdapter extends BaseAdapter {
             imageView.setPadding(PADDING, PADDING, PADDING, PADDING);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         }
-
         imageView.setImageResource(mThumbIds.get(position));
         return imageView;
     }

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -8,7 +7,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2"
-        android:layout_above="@+id/resetButton"
         android:layout_alignParentEnd="false"
         android:layout_alignParentTop="true"
         android:baselineAligned="false">
@@ -28,8 +26,7 @@
                 android:scrollHorizontally="true"
                 android:cursorVisible="false"
                 android:gravity="center"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp" />
+                android:layout_gravity="center_horizontal" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,38 +36,42 @@
                 android:id="@+id/scoreTextViewA"
                 android:layout_gravity="center_horizontal"
                 android:textAlignment="center"
-                android:textSize="50sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:layout_margin="10dp" />
+                android:padding="15dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:text="@string/penalty_button_a"
                 android:id="@+id/penaltyButtonA"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_vertical"
-                android:clickable="true"
-                android:layout_margin="10dp" />
+                android:gravity="center"
+                android:clickable="true" />
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/conversion_button_a"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="@string/land_con_button_a"
                 android:id="@+id/conversionButtonA"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center_vertical|left"
-                android:layout_margin="10dp" />
+                android:gravity="center" />
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
                 android:text="@string/try_button_a"
                 android:id="@+id/tryButtonA"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center_vertical|left"
-                android:layout_margin="10dp" />
+                android:gravity="center" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -89,7 +90,6 @@
                 android:id="@+id/editTextB"
                 android:layout_gravity="center_horizontal"
                 android:cursorVisible="false"
-                android:layout_margin="10dp"
                 android:scrollHorizontally="true"
                 android:gravity="center" />
 
@@ -102,40 +102,46 @@
                 android:id="@+id/scoreTextViewB"
                 android:layout_gravity="center_horizontal"
                 android:textAlignment="center"
-                android:textSize="50sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:layout_margin="10dp" />
+                android:padding="15dp" />
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/penalty_button_b"
-                android:id="@+id/penaltyButtonB"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_vertical"
-                android:layout_margin="10dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/conversion_button_b"
-                android:id="@+id/conversionButtonB"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_vertical|left"
-                android:layout_margin="10dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/penalty_button_b"
+                    android:id="@+id/penaltyButtonB"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center" />
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/try_button_b"
-                android:id="@+id/tryButtonB"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_vertical|left"
-                android:layout_margin="10dp" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/land_con_button_b"
+                    android:id="@+id/conversionButtonB"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/try_button_b"
+                    android:id="@+id/tryButtonB"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -145,24 +151,24 @@
         android:text="@string/rugby_reset_button"
         android:id="@+id/resetButton"
         android:minWidth="100dp"
-        android:layout_alignTop="@+id/summaryButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentStart="false"
         android:layout_marginLeft="50dp"
-        android:layout_marginStart="90dp"
         android:layout_alignParentBottom="false"
-        android:layout_alignWithParentIfMissing="false" />
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginBottom="20dp"
+        android:layout_alignTop="@+id/summaryButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rugby_summary_button"
         android:id="@+id/summaryButton"
-        android:layout_marginBottom="50dp"
         android:minWidth="100dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="false"
-        android:layout_marginRight="50dp" />
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp" />
 </RelativeLayout>
